@@ -21,7 +21,11 @@ dnf5 install -y tmux emacs ripgrep fd-find
 
 # Dank Material Shell installation (with Niri)
 dnf5 copr -y enable avengemedia/dms
-dnf5 install -y niri dms
+# Also install weak dependencies for DMS
+# (Recommended packages used for DMS)
+dnf5 install -y dms --setopt=install_weak_deps=True
+# Install Niri to use with DMS
+dnf5 install -y niri
 
 dnf5 -y copr disable avengemedia/dms
 

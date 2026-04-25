@@ -32,3 +32,6 @@ dnf5 -y copr disable avengemedia/dms
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# Enable danksearch user service
+systemctl --user enable dsearch

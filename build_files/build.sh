@@ -18,8 +18,8 @@ dnf5 install -y tmux emacs ripgrep fd-find
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-dnf5 copr enable avengemedia/dms
-dnf5 install dms
+dnf5 copr -y enable avengemedia/dms
+dnf5 install -y dms
 
 dnf5 -y copr disable avengemedia/dms
 

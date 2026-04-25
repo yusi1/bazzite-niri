@@ -34,4 +34,5 @@ dnf5 -y copr disable avengemedia/dms
 systemctl enable podman.socket
 
 # Enable danksearch user service
-systemctl --user enable dsearch
+# (Doesn't work)
+#systemctl --user enable dsearch
